@@ -404,7 +404,9 @@
                     <button class="record-button" ${att ? 'disabled' : ''} onclick="markAttendance(${r.M})">
                         ${att ? '✓' : 'حضر'}
                     </button>
-                    ${att && currentUser.role === 'admin' ? `<button class="record-button cancel" onclick="cancelAttendance(${r.M})">✕</button>` : ''}
+                    ${att && currentUser 
+  ? `<button class="record-button cancel" onclick="cancelAttendance(${r.M})">✕</button>` 
+  : ''}
                     <div class="record-info">
                         <div class="record-name">م:${r.M} | ${r.code} | ${r.actor}</div>
                         <div class="record-company">${r.company}</div>
