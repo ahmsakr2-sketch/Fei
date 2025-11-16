@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نظام تسجيل الحضور - انتخابات غرفة الصناعات الكيماوية 2025</title>
+    <title>نظام تسجيل الحضور - انتخابات غرفة صناعات الأخشاب 2025</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
@@ -97,7 +97,7 @@
 <body>
     <div id="loginScreen">
         <div class="login-box">
-            <h2 class="login-title">📋 نظام الحضور - انتخابات غرفة الصناعات الكيماوية 2025</h2>
+            <h2 class="login-title">📋 نظام الحضور - انتخابات غرفة صناعات الأخشاب 2025</h2>
             <div class="login-error" id="loginError"></div>
             <form onsubmit="handleLogin(event)">
                 <div class="form-group">
@@ -115,7 +115,7 @@
 
     <div id="dashboardScreen">
         <div class="header">
-            <h1>📋 نظام الحضور - انتخابات غرفة الصناعات الكيماوية 2025</h1>
+            <h1>📋 نظام الحضور - انتخابات غرفة صناعات الأخشاب 2025</h1>
             <div class="status-bar">
                 <div class="status-indicator">
                     <span class="status-dot disconnected" id="firebaseStatus"></span>
@@ -250,7 +250,7 @@
         let currentUser = null;
         let firebaseDB = null;
         let firebaseConnected = false;
-        const TOTAL_RECORDS = 1912;
+        const TOTAL_RECORDS = 683;
 
         let users = {
             "admin": {username: "admin", password: "Ali510", role: "admin"},
