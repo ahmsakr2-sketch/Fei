@@ -295,10 +295,12 @@
     }
 
     // حساب النسبة بعد تحميل الحضور مباشرة
-    const totalCount = Array.isArray(allRecords) ? allRecords.length : 0;
-    const attendedCount = Object.keys(attendance).filter(k => attendance[k]).length;
-    const percentageValue = totalCount > 0 ? (attendedCount / totalCount) * 100 : 0;
-    const roundedPercent = Math.round(percentageValue);
+const totalCount = Array.isArray(allRecords) ? allRecords.length : 0;
+const attendedCount = Object.keys(attendance).filter(k => attendance[k]).length;
+
+const percentageValue = totalCount > 0 ? (attendedCount / totalCount) * 100 : 0;
+const roundedPercent = percentageValue.toFixed(1);
+
 
     console.log("الحاضرين:", attendedCount, "من:", totalCount, "النسبة:", roundedPercent + "%");
 
