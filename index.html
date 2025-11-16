@@ -516,7 +516,7 @@ const roundedPercent = percentageValue.toFixed(1);
 
             let html1 = '';
             Object.values(categoryUser).forEach(item => {
-                const percent = Math.round((item.count / TOTAL_RECORDS) * 100);
+                const percent = ((item.count / TOTAL_RECORDS) * 100).toFixed(1);
                 html1 += `<tr>
                     <td>${item.cat}</td>
                     <td>${item.user}</td>
