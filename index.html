@@ -454,7 +454,7 @@ const roundedPercent = percentageValue.toFixed(1);
 
             // معادلة حساب النسبة المئوية الصحيحة
             const percentageValue = (attendedCount / totalCount) * 100;
-            const roundedPercent = Math.round(percentageValue);
+            const roundedPercent = percentageValue.toFixed(1);
 
             const categoryStats = {};
             allRecords.forEach(r => {
